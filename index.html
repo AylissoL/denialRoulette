@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Wheel RNG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="instructions">
+        <h2>How to Play</h2>
+        <p>1. Enter the number of elements on the wheel.</p>
+        <p>2. Customize each element with a name, color, and percentage chance.</p>
+        <p>3. Make sure the total percentage equals 100%. <em>there is a check when you hit the spin button</em> </p>
+        <p>4. Click "Spin" to spin the wheel and see the result!</p>
+    </div>
+    <h1 id="result-message"></h1>
+    <div id="container">
+        <div id="wheel-container">
+            <canvas id="wheel" width="500" height="500"></canvas>
+            <div id="pointer"></div>
+        </div>
+        <div id="controls">
+            <input type="number" id="numElements" placeholder="Number of Elements" min="1">
+            <button id="generateButton">Generate Elements</button>
+            <div id="elementsContainer"></div>
+            <button id="spinButton">Spin</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

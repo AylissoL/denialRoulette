@@ -1,0 +1,130 @@
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #240046, #9d0191); /* Dark purple/dark pink gradient */
+    color: #FFFFFF; /* Light text color */
+}
+
+/* Instructions styling */
+#instructions {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Result message styling */
+#result-message {
+    font-size: 2em;
+    margin-top: 15px;
+    margin-bottom: 55px;
+    text-align: center;
+    color: #FF00FF; /* Bright pink */
+    border-radius: 0.3rem;
+    border: 2px solid #000; /* Black border */
+    box-shadow: 0 4px 8px rgba(157, 1, 145, 0.66); /* Dark pink shadow */
+    padding: 10px;
+    width: fit-content;
+    background-color: #000; /* Black background */
+}
+
+/* Container styling */
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Wheel container styling */
+#wheel-container {
+    margin: 20px;
+    position: relative;
+}
+
+/* Controls styling */
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    max-width: 400px;
+}
+
+/* Input and button styling */
+#controls input, #controls button {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #333333; /* Dark input background */
+    color: #FFFFFF; /* Light input text color */
+    border: 1px solid #444444; /* Dark input border */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+#controls button {
+    cursor: pointer;
+}
+
+/* Elements container styling */
+#elementsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Element controls styling */
+.element-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+}
+
+/* Color picker styling */
+.element-color {
+    border: 2px solid #FF00FF; /* Bright pink border */
+}
+
+/* Error message styling */
+#error-message {
+    color: #FF0000; /* Red text color */
+    display: none; /* Hidden by default */
+    margin-top: 10px;
+}
+
+/* Canvas styling */
+canvas {
+    border: none; /* Remove border */
+    border-radius: 50%; /* Make it round */
+}
+
+/* Pointer styling */
+#pointer {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #FF00FF; /* Bright pink */
+}
+
+/* Spin animation */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.spinAnimation {
+    animation: spin var(--duration) ease-out;
+}
